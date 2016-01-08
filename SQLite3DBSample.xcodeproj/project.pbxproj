@@ -16,6 +16,10 @@
 		84E5CC521C401871002A59A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E5CC501C401871002A59A3 /* LaunchScreen.storyboard */; };
 		84E5CC5D1C401871002A59A3 /* SQLite3DBSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CC5C1C401871002A59A3 /* SQLite3DBSampleTests.m */; };
 		84E5CC681C401871002A59A3 /* SQLite3DBSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CC671C401871002A59A3 /* SQLite3DBSampleUITests.m */; };
+		84E5CC761C4018C6002A59A3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E5CC751C4018C6002A59A3 /* libsqlite3.tbd */; };
+		84E5CC791C40199C002A59A3 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CC781C40199C002A59A3 /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
+		84E5CC7D1C4031D7002A59A3 /* sampledb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 84E5CC7C1C4031D7002A59A3 /* sampledb.sql */; settings = {ASSET_TAGS = (); }; };
+		84E5CC801C403749002A59A3 /* EditInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CC7F1C403749002A59A3 /* EditInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		84E5CC631C401871002A59A3 /* SQLite3DBSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLite3DBSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E5CC671C401871002A59A3 /* SQLite3DBSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLite3DBSampleUITests.m; sourceTree = "<group>"; };
 		84E5CC691C401871002A59A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E5CC751C4018C6002A59A3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84E5CC771C40199C002A59A3 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		84E5CC781C40199C002A59A3 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		84E5CC7C1C4031D7002A59A3 /* sampledb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = sampledb.sql; path = ../sampledb.sql; sourceTree = "<group>"; };
+		84E5CC7E1C403749002A59A3 /* EditInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInfoViewController.h; sourceTree = "<group>"; };
+		84E5CC7F1C403749002A59A3 /* EditInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5CC761C4018C6002A59A3 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,15 +114,21 @@
 		84E5CC3E1C401871002A59A3 /* SQLite3DBSample */ = {
 			isa = PBXGroup;
 			children = (
+				84E5CC771C40199C002A59A3 /* DBManager.h */,
+				84E5CC781C40199C002A59A3 /* DBManager.m */,
 				84E5CC421C401871002A59A3 /* AppDelegate.h */,
 				84E5CC431C401871002A59A3 /* AppDelegate.m */,
 				84E5CC451C401871002A59A3 /* ViewController.h */,
 				84E5CC461C401871002A59A3 /* ViewController.m */,
+				84E5CC7E1C403749002A59A3 /* EditInfoViewController.h */,
+				84E5CC7F1C403749002A59A3 /* EditInfoViewController.m */,
 				84E5CC481C401871002A59A3 /* Main.storyboard */,
 				84E5CC4E1C401871002A59A3 /* Assets.xcassets */,
 				84E5CC501C401871002A59A3 /* LaunchScreen.storyboard */,
 				84E5CC531C401871002A59A3 /* Info.plist */,
 				84E5CC4B1C401871002A59A3 /* SQLite3DBSample.xcdatamodeld */,
+				84E5CC751C4018C6002A59A3 /* libsqlite3.tbd */,
+				84E5CC7C1C4031D7002A59A3 /* sampledb.sql */,
 				84E5CC3F1C401871002A59A3 /* Supporting Files */,
 			);
 			path = SQLite3DBSample;
@@ -248,6 +265,7 @@
 			files = (
 				84E5CC521C401871002A59A3 /* LaunchScreen.storyboard in Resources */,
 				84E5CC4F1C401871002A59A3 /* Assets.xcassets in Resources */,
+				84E5CC7D1C4031D7002A59A3 /* sampledb.sql in Resources */,
 				84E5CC4A1C401871002A59A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +295,8 @@
 				84E5CC4D1C401871002A59A3 /* SQLite3DBSample.xcdatamodeld in Sources */,
 				84E5CC441C401871002A59A3 /* AppDelegate.m in Sources */,
 				84E5CC411C401871002A59A3 /* main.m in Sources */,
+				84E5CC801C403749002A59A3 /* EditInfoViewController.m in Sources */,
+				84E5CC791C40199C002A59A3 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
