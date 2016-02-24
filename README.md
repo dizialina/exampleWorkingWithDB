@@ -19,3 +19,7 @@ Application allows you to make list of people with their names, last names and a
 5. Delegates of text fields and table view for better way to input data and making table with them.
 6. Creating own delegate of view controller to know when uploading of data base is finished and reload table.
 7. Accessory of table view cell for open edit screen of necessary record.
+
+##Screenshots:
+![Alt text](http://clip2net.com/clip/m496854/64d84-clip-52kb.jpg "Optional title")
+![Alt text](http://clip2net.com/clip/m496854/fba7b-clip-21kb.jpg "Optional title")
